@@ -90,7 +90,9 @@
 <br/>
 <br/>
 
-#
+---
+
+### 📊 Estatísticas
 
 <div style="display: flex; justify-content: center; gap: 30px;">
   <img 
