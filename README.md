@@ -95,14 +95,12 @@
 <div style="display: flex; gap: 10px; justify-content: center;">
     <img 
     alt="GitHub Stats"
-    style="width: 60%;" 
-    height="200"
+    style="height: 200px; width: auto;" 
     src="https://github-readme-stats.vercel.app/api?username=faalkor&show_icons=true&theme=gruvbox&include_all_commits=true&locale=pt-br" 
   />
   <img 
       alt="GitHub Stats"
-      style="width: 30%;"
-      height="200"
+      style="height: 200px; width: auto;" 
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=faalkor&theme=gruvbox&layout=compact&custom_title=Tecnologias&langs_count=7" 
   />
 </div>
