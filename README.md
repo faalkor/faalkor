@@ -105,7 +105,7 @@
       align="left" 
       alt="GitHub Stats" 
       height="200"
-      style="padding-right: 10px; display: inline-block;"
+      style="display: inline-block;"
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=faalkor&theme=gruvbox&layout=compact&custom_title=Tecnologias&langs_count=7" 
   />
 
