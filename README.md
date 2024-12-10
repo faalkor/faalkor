@@ -95,7 +95,7 @@
 <div style="display: flex; justify-content: center;">
     <img 
     alt="GitHub Stats"
-    style="height: 175px; width: auto; padding-right: 10px;" 
+    style="height: 175px; width: auto; margin-right: 20px;" 
     src="https://github-readme-stats.vercel.app/api?username=faalkor&show_icons=true&theme=gruvbox&include_all_commits=true&locale=pt-br" 
   />
   <img 
