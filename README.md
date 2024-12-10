@@ -101,7 +101,7 @@
   />
   <img 
       alt="GitHub Stats"
-      style="width: 40%;"
+      style="width: 10%;"
       height="200"
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=faalkor&theme=gruvbox&layout=compact&custom_title=Tecnologias&langs_count=7" 
   />
