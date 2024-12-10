@@ -92,19 +92,6 @@
 
 #
 
-<div style="justify-content: center;">
-    <img 
-    alt="GitHub Stats"
-    style="height: 175px; margin-right: 30px; padding-right: 10px;" 
-    src="https://github-readme-stats.vercel.app/api?username=faalkor&show_icons=true&theme=gruvbox&include_all_commits=true&locale=pt-br" 
-  />
-  <img 
-      alt="GitHub Stats"
-      style="height: 175px;" 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=faalkor&theme=gruvbox&layout=compact&custom_title=Tecnologias&langs_count=7" 
-  />
-</div>
-
 <div style="display: flex; justify-content: center; gap: 30px;">
   <img 
     alt="GitHub Stats"
