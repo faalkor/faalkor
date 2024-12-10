@@ -100,24 +100,20 @@
   />
   <img 
       alt="GitHub Stats"
-      style="height: 175px; width: auto;" 
+      style="height: 175px;" 
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=faalkor&theme=gruvbox&layout=compact&custom_title=Tecnologias&langs_count=7" 
   />
 </div>
 
-<p>
+<div style="display: flex; justify-content: center; gap: 30px;">
   <img 
-    align="left" 
-    alt="GitHub Stats" 
-    style="height: 175px; padding-right: 10px"
+    alt="GitHub Stats"
+    style="height: 175px; width: auto;" 
     src="https://github-readme-stats.vercel.app/api?username=faalkor&show_icons=true&theme=gruvbox&include_all_commits=true&locale=pt-br" 
   />
-
-<img 
-      align="left" 
-      alt="GitHub Stats" 
-      style="height: 175px; width: auto; padding-right: 10px"
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=faalkor&theme=gruvbox&layout=compact&custom_title=Tecnologias&langs_count=7" 
+  <img 
+    alt="GitHub Stats"
+    style="height: 175px; width: auto;" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=faalkor&theme=gruvbox&layout=compact&custom_title=Tecnologias&langs_count=7" 
   />
-
-</p>
+</div>
