@@ -92,10 +92,10 @@
 
 #
 
-<div style="display: flex; justify-content: center;">
+<div style="display: flex; justify-content: center; gap: 30px;">
     <img 
     alt="GitHub Stats"
-    style="height: 175px; width: auto; margin-right: 20px;" 
+    style="height: 175px; width: auto; margin: 10px;" 
     src="https://github-readme-stats.vercel.app/api?username=faalkor&show_icons=true&theme=gruvbox&include_all_commits=true&locale=pt-br" 
   />
   <img 
