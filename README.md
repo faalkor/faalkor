@@ -92,7 +92,7 @@
 
 #
 
-<div style="display: flex; justify-content: center;">
+<div style="justify-content: center;">
     <img 
     alt="GitHub Stats"
     style="height: 175px; width: auto; margin-right: 30px; padding-right: 10px;" 
