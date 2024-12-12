@@ -1,0 +1,30 @@
+name: Update README Cache
+
+on:
+  schedule:
+    - cron: "0 */1 * * *" # Executa a cada 1 hora
+  workflow_dispatch: # Para execução manual
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Generate Random Number
+        id: generate_random
+        run: echo "RAND=$(($RANDOM))" >> $GITHUB_ENV
+
+      - name: Update README with new rand
+        run: |
+          sed -i "s|rand=[0-9]\+|rand=${{ env.RAND }}|g" README.md
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "Atualizando README com novo número rand"
+          git push
