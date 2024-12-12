@@ -2,8 +2,8 @@ name: Update README Cache
 
 on:
   schedule:
-    - cron: "0 */1 * * *" # Executa a cada 1 hora
-  workflow_dispatch: # Para execução manual
+    - cron: "0 */1 * * *"  # Executa a cada 1 hora
+  workflow_dispatch:
 
 jobs:
   update-readme:
@@ -15,16 +15,22 @@ jobs:
 
       - name: Generate Random Number
         id: generate_random
-        run: echo "RAND=$(($RANDOM))" >> $GITHUB_ENV
+        run: echo "RAND=$(openssl rand -hex 4)" >> $GITHUB_ENV
 
       - name: Update README with new rand
         run: |
+          echo "Substituindo rand no README.md"
           sed -i "s|rand=[0-9]\+|rand=${{ env.RAND }}|g" README.md
 
-      - name: Commit changes
+      - name: Commit changes if README was updated
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add README.md
-          git commit -m "Atualizando README com novo número rand"
-          git push
+
+          if git status --porcelain | grep -q "README.md"; then
+            git commit -m "Atualizando README com novo número rand"
+            git push origin main
+          else
+            echo "No changes detected in README.md"
+          fi
