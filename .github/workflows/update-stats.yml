@@ -17,7 +17,7 @@ jobs:
         id: generate_random
         run: echo "RAND=$(openssl rand -hex 4)" >> $GITHUB_ENV
 
-      - name: Debug: Print README before changes
+      - name: Print README before changes
         run: cat README.md
 
       - name: Update README with new rand
@@ -25,7 +25,7 @@ jobs:
           echo "Substituindo rand no README.md"
           sed -i "s|rand=[a-fA-F0-9]\+|rand=${{ env.RAND }}|g" README.md
 
-      - name: Debug: Print README after changes
+      - name: Print README after changes
         run: cat README.md
 
       - name: Commit changes if README was updated
@@ -34,7 +34,7 @@ jobs:
           git config user.email "github-actions@github.com"
           git add README.md
 
-          echo "Git Status após sed:"
+          echo "Git Status apos sed:"
           git status --short
 
           if git status --porcelain | grep -q "README.md"; then
