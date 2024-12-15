@@ -27,7 +27,7 @@ jobs:
       - name: Update README with new rand
         run: |
           echo "Substituindo rand no README.md"
-          sed -i "s|rand*=*[0-9a-fA-F]+|rand=${RAND}|g" README.md
+          perl -pi -e "s|rand=[0-9a-fA-F]*|rand=${RAND}|g" README.md
 
       - name: Print README after changes
         run: cat README.md
