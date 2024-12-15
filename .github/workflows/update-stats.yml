@@ -10,18 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Faz o checkout do repositório
       - name: Check out repository
         uses: actions/checkout@v2
 
+      # Gera um número aleatório
       - name: Generate Random Number
         id: generate_random
         run: echo "RAND=$(openssl rand -hex 4)" >> $GITHUB_ENV
 
+      # Substitui o valor de 'rand' no arquivo README.md
       - name: Update README with new rand
         run: |
           echo "Substituindo rand no README.md"
-          sed -i "s|rand=[0-9]\+|rand=${{ env.RAND }}|g" README.md
+          sed -i "s|rand=[a-fA-F0-9]\+|rand=${{ env.RAND }}|g" README.md
 
+      # Configura o Git e realiza commit/push se houver alterações
       - name: Commit changes if README was updated
         run: |
           git config user.name "github-actions"
