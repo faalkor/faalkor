@@ -19,7 +19,11 @@ jobs:
 
       - name: Print README before changes
         run: cat README.md
-
+        
+      - name: Check regex
+        run: |
+         grep -E "rand=[0-9a-fA-F]+" README.md
+         
       - name: Update README with new rand
         run: |
           echo "Substituindo rand no README.md"
