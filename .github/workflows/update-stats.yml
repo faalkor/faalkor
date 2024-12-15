@@ -23,8 +23,7 @@ jobs:
       - name: Update README with new rand
         run: |
           echo "Substituindo rand no README.md"
-          sed -i "s|rand=[a-zA-Z0-9]+|rand=${{ env.RAND }}|g" README.md
-
+          sed -i "s|rand=[a-zA-Z0-9]+|rand=d96032db|g" README.md
 
       - name: Print README after changes
         run: cat README.md
