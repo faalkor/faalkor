@@ -98,11 +98,11 @@
   <img 
     alt="GitHub Stats"
     style="height: 180px; width: auto;" 
-    src="https://github-readme-stats.vercel.app/api?username=faalkor&show_icons=true&theme=gruvbox&include_all_commits=true&locale=pt-br&rand=e8543f0d"
+    src="https://github-readme-stats.vercel.app/api?username=faalkor&show_icons=true&theme=gruvbox&include_all_commits=true&locale=pt-br&rand=e7b9b769"
   />
   <img 
     alt="GitHub Stats"
     style="height: 180px; width: auto;" 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=faalkor&theme=gruvbox&layout=compact&custom_title=Tecnologias&langs_count=7&rand=e8543f0d" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=faalkor&theme=gruvbox&layout=compact&custom_title=Tecnologias&langs_count=7&rand=e7b9b769" 
   />
 </div>
