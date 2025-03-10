@@ -2,7 +2,7 @@ name: Update README Cache
 
 on:
   schedule:
-    - cron: "0 */1 * * *"  # Executa a cada 1 hora
+    - cron: "0 */24 * * *"
   workflow_dispatch:
 
 jobs:
